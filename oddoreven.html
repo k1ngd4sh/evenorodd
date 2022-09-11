@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>OddOrEven</h1>
+
+<p id="demo"></p>
+
+<script>
+
+    var value = prompt("Enter Value");
+        sum = 0;
+
+  while (value) {
+      sum += value % 10;
+      value = Math.floor(value / 10);
+	  
+	  
+  }
+  
+
+
+if(sum % 2 === 0) 
+{
+document.getElementById("demo").innerHTML = "Result is Even And Total of Values =" + sum;
+
+} 
+else if(sum % 2 === 1) 
+{
+document.getElementById("demo").innerHTML = "Result is Odd And Total of Values =" + sum;
+} 
+else 
+{
+ document.getElementById("demo").innerHTML = "Please Enter a Valid Value";
+}
+
+
+</script>
+
+</body>
+</html>
